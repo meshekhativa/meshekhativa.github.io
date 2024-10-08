@@ -3,7 +3,7 @@
     "version": 1,
     "newProjectRoot": "projects",
     "projects": {
-        "TODO-ProjectName": {
+        "hativa": {
             "projectType": "application",
             "schematics": {
                 "@schematics/angular:component": {
@@ -42,7 +42,7 @@
                 "build": {
                     "builder": "@angular-devkit/build-angular:application",
                     "options": {
-                        "outputPath": "dist/TODO-ProjectName",
+                        "outputPath": "dist/hativa",
                         "index": "src/index.html",
                         "browser": "src/main.ts",
                         "polyfills": ["zone.js"],
@@ -59,8 +59,6 @@
                             "src/favicon-16x16.png",
                             "src/favicon-32x32.png",
                             "src/favicon.ico",
-                            "src/mstile-150x150.png",
-                            "src/safari-pinned-tab.svg",
                             "src/site.webmanifest",
                             "src/assets"
                         ],
@@ -98,10 +96,10 @@
                     "builder": "@angular-devkit/build-angular:dev-server",
                     "configurations": {
                         "production": {
-                            "buildTarget": "TODO-ProjectName:build:production"
+                            "buildTarget": "hativa:build:production"
                         },
                         "development": {
-                            "buildTarget": "TODO-ProjectName:build:development"
+                            "buildTarget": "hativa:build:development"
                         }
                     },
                     "defaultConfiguration": "development"
@@ -109,7 +107,7 @@
                 "extract-i18n": {
                     "builder": "@angular-devkit/build-angular:extract-i18n",
                     "options": {
-                        "buildTarget": "TODO-ProjectName:build"
+                        "buildTarget": "hativa:build"
                     }
                 },
                 "test": {

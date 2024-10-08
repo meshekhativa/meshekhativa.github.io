@@ -1,5 +1,5 @@
 // For PrimeNG
-@import 'primeng/resources/themes/aura-dark-teal/theme.css';
+@import 'primeng/resources/themes/lara-light-blue/theme.css';
 @import 'primeng/resources/primeng.css';
 @import 'primeicons/primeicons.css';
 @import 'primeflex/primeflex.css';
@@ -9,15 +9,17 @@
 
     // override PrimeNG //TODO
     --font-family: 'Inconsolata', monospace;
-    --text-color: #fff;
-    --primary-color: black;
+    // --text-color: #fff;
+    // --primary-color: black;
+
+    direction: rtl;
 }
 
 html,
 body {
-    pointer-events: none; // TODO
     margin: 0;
     padding: 0;
+    font-size: 1.1rem;
 }
 
 * {
@@ -63,8 +65,24 @@ p-button {
     min-width: 20rem;
 }
 
+.max-w-30rem {
+    max-width: 30rem;
+}
+
 .max-w-35rem {
     max-width: 35rem;
+}
+
+.max-w-40rem {
+    max-width: 40rem;
+}
+
+.max-w-45rem {
+    max-width: 45rem;
+}
+
+.max-w-55rem {
+    max-width: 55rem;
 }
 
 .translate-top-left-50 {
@@ -87,4 +105,14 @@ p-button {
 
 .fade-in {
     animation: fadeIn 1s ease forwards;
+}
+
+.hero {
+    background-image: url('assets/general/background.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    min-block-size: 100vh;
+    place-content: center;
+    text-align: center;
 }
