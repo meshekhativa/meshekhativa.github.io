@@ -11,12 +11,15 @@
     --font-family: 'Inconsolata', monospace;
     // --text-color: #fff;
     // --primary-color: black;
+    --background-color: rgb(240, 240, 240);
+    --background-color-dark: rgb(220, 220, 220);
 
     direction: rtl;
 }
 
 html,
 body {
+    background-color: var(--background-color);
     margin: 0;
     padding: 0;
     font-size: 1.1rem;
@@ -107,12 +110,12 @@ p-button {
     animation: fadeIn 1s ease forwards;
 }
 
-.hero {
-    background-image: url('assets/general/background.webp');
-    background-size: cover;
-    background-repeat: no-repeat;
+// .hero {
+//     background-image: url('assets/general/background.webp');
+//     background-size: cover;
+//     background-repeat: no-repeat;
 
-    min-block-size: 100vh;
-    place-content: center;
-    text-align: center;
-}
+//     min-block-size: 100vh;
+//     place-content: center;
+//     text-align: center;
+// }

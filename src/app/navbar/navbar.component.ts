@@ -1,4 +1,6 @@
 import { Component, HostListener, Input } from '@angular/core'
+import { MenuItem } from 'primeng/api'
+
 import { NavigationEnd, Router } from '@angular/router'
 import { filter } from 'rxjs'
 import { routerPaths } from '../misc/strings'
@@ -10,31 +12,57 @@ import { routerPaths } from '../misc/strings'
 })
 export class NavbarComponent {
     @Input() isSideways!: boolean
-    activeIndex: number = 0
-    routerLinks = routerPaths
+    items!: MenuItem[]
 
     constructor(private router: Router) {}
 
-    ngOnInit(): void {
-        this.router.events
-            .pipe(
-                filter(
-                    (event): event is NavigationEnd =>
-                        event instanceof NavigationEnd
-                )
-            )
-            .subscribe(this.setIndexViaURL)
-    }
-
-    setIndexViaURL = (event: NavigationEnd) => {
-        this.activeIndex = this.routerLinks.indexOf(event.urlAfterRedirects)
-    }
-
-    setActive(i: number) {
-        this.activeIndex = i
-    }
-
-    isActive(i: number) {
-        return this.activeIndex === i
+    ngOnInit() {
+        this.items = [
+            {
+                label: 'אודות המשק',
+                icon: 'pi pi-palette',
+                items: [
+                    {
+                        label: 'החצר ובית המלכה',
+                        route: routerPaths[1],
+                    },
+                ],
+            },
+            {
+                label: 'מוזאיקה',
+                icon: 'pi pi-link',
+                command: () => {
+                    this.router.navigate(['/installation'])
+                },
+            },
+            {
+                label: 'שמן זית',
+                icon: 'pi pi-home',
+                items: [
+                    {
+                        label: 'Angular',
+                        url: 'https://angular.io/',
+                    },
+                    {
+                        label: 'Vite.js',
+                        url: 'https://vitejs.dev/',
+                    },
+                ],
+            },
+            {
+                label: 'צור קשר',
+                icon: 'pi pi-home',
+                items: [
+                    {
+                        label: 'Angular',
+                        url: 'https://angular.io/',
+                    },
+                    {
+                        label: 'Vite.js',
+                        url: 'https://vitejs.dev/',
+                    },
+                ],
+            },
+        ]
     }
 }

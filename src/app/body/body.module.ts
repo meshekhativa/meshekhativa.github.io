@@ -4,10 +4,18 @@ import { IntroComponent } from '../intro/intro.component'
 import { CardModule } from 'primeng/card'
 import { DividerModule } from 'primeng/divider'
 import { ImageModule } from 'primeng/image'
+import { MenubarModule } from 'primeng/menubar'
+import { CommonModule } from '@angular/common' // Import CommonModule
 
 @NgModule({
     declarations: [NavbarComponent, IntroComponent],
-    imports: [CardModule, DividerModule, ImageModule],
+    imports: [
+        CardModule,
+        MenubarModule,
+        DividerModule,
+        ImageModule,
+        CommonModule,
+    ],
     exports: [IntroComponent, NavbarComponent],
 })
 export class BodyModule {}

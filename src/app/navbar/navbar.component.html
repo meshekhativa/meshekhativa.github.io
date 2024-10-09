@@ -1,11 +1,42 @@
-<nav
-    class="fixed w-screen top-0 bg-blue-500 flex justify-content-center align-content-center gap-5"
+<div
+    class="fixed top-0 w-screen flex justify-content-center align-content-center gap-5"
 >
-    <h1>משק חטיבה</h1>
-    <ul class="p-0 m-0 flex justify-content-center align-content-center gap-5">
-        <a routerLink="/">אודות המשק</a>
-        <a routerLink="/">מוזאיקה</a>
-        <a routerLink="/">שמן זית</a>
-        <a routerLink="/">צור קשר</a>
-    </ul>
-</nav>
+    <h1 class="m-0 p-0 flex justify-content-center align-items-center">
+        משק חטיבה
+    </h1>
+    <nav class="card my-2">
+        <p-menubar [model]="items">
+            <ng-template
+                pTemplate="item"
+                let-item
+            >
+                <ng-container *ngIf="item.route; else urlRef">
+                    <a
+                        [routerLink]="item.route"
+                        class="p-menuitem-link"
+                    >
+                        <span [class]="item.icon"></span>
+                        <span class="mr-2">{{ item.label }}</span>
+                    </a>
+                </ng-container>
+                <ng-template #urlRef>
+                    <a
+                        *ngIf="item.url; else noLink"
+                        [href]="item.url"
+                        class="p-menuitem-link"
+                    >
+                        <span [class]="item.icon"></span>
+                        <span class="mr-2">{{ item.label }}</span>
+                    </a>
+                </ng-template>
+                <ng-template #noLink>
+                    <div class="p-menuitem-link">
+                        <span [class]="item.icon"></span>
+                        <span class="mr-2">{{ item.label }}</span>
+                        <span class="pi pi-fw pi-angle-down mr-2"></span>
+                    </div>
+                </ng-template>
+            </ng-template>
+        </p-menubar>
+    </nav>
+</div>
