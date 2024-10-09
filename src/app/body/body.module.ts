@@ -8,9 +8,10 @@ import { MenubarModule } from 'primeng/menubar'
 import { CommonModule } from '@angular/common'
 import { YardComponent } from '../yard/yard.component' // Import CommonModule
 import { GalleriaModule } from 'primeng/galleria';
-import { TablesComponent } from '../tables/tables.component'
+import { TablesComponent } from '../tables/tables.component';
+import { PlatesComponent } from '../plates/plates.component'
 @NgModule({
-    declarations: [NavbarComponent, IntroComponent, YardComponent, TablesComponent],
+    declarations: [NavbarComponent, IntroComponent, YardComponent, TablesComponent, PlatesComponent],
     imports: [
         CardModule,
         GalleriaModule,

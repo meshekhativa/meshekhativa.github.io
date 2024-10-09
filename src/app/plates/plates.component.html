@@ -1,11 +1,12 @@
 <article class="flex justify-content-center mt-8 pt-4">
     <div class="flex max-w-55rem gap-5">
         <p-card>
-            <h1>שולחנות מוזאיקה</h1>
+            <h1>פלטות מוזאיקה</h1>
             <p>
-                השולחנות הם הפריט הראשון שהחלו עפרה ועמי לבנות. עמי אחראי לבניית
-                רגלי וגוף השולחן מברזל ועפרה אחראית לעיצוב ובניית לוח המוזאיקה
-                מאבנים וחרסים שונים.
+                הפלטות, חלקן מסתובבות וחלקן קבועות ולכל אחת טקסטורה ייחודית
+                ממוזאיקה.
+                <br />
+                פלטות העץ נחתכות על ידי עמי והמוזאיקה מעשה ידי עפרה.
             </p>
             <p-divider></p-divider>
 
@@ -50,6 +51,32 @@
                     </ng-template>
                 </p-galleria>
             </div>
+
+            <!-- <div
+                class="card flex justify-content-center align-items-center ltr"
+            >
+                <p-galleria
+                    [value]="images"
+                    [autoPlay]="true"
+                    [showIndicators]="false"
+                    [showThumbnails]="false"
+                    [showItemNavigatorsOnHover]="false"
+                    [showItemNavigators]="false"
+                    [responsiveOptions]="responsiveOptions"
+                    [containerStyle]="{ 'max-width': '640px' }"
+                >
+                    <ng-template
+                        pTemplate="item"
+                        let-item
+                    >
+                        <p-image
+                            [src]="item.itemImageSrc"
+                            width="550"
+                            height="400"
+                        />
+                    </ng-template>
+                </p-galleria>
+            </div> -->
         </p-card>
     </div>
 </article>

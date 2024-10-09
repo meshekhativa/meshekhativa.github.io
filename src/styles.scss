@@ -118,6 +118,12 @@ p-button {
     animation: fadeIn 1s ease forwards;
 }
 
+.fixed-size {
+    width: 100px; /* Set your desired width */
+    height: 100px; /* Set your desired height */
+    object-fit: cover; /* Optional: to maintain aspect ratio */
+}
+
 // .hero {
 //     background-image: url('assets/general/background.webp');
 //     background-size: cover;
