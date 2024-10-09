@@ -5,4 +5,5 @@ export enum RouterPaths {
     Plates = '/plates',
     OtherWork = '/other-work',
     Oil = '/oil',
+    Contact = '/contact',
 }

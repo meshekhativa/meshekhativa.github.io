@@ -55,16 +55,9 @@ export class NavbarComponent {
             },
             {
                 label: 'צור קשר',
-                items: [
-                    {
-                        label: 'Angular',
-                        url: 'https://angular.io/',
-                    },
-                    {
-                        label: 'Vite.js',
-                        url: 'https://vitejs.dev/',
-                    },
-                ],
+                command: () => {
+                    this.router.navigate([RouterPaths.Contact])
+                },
             },
         ]
     }

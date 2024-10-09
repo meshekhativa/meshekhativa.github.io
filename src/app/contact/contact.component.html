@@ -1,0 +1,28 @@
+<article class="flex justify-content-center mt-8 pt-4">
+    <div class="flex max-w-55rem gap-5">
+        <div class="flex-1">
+            <p-card>
+                <h1>צור קשר</h1>
+                <h4>
+                    להזמנת שולחנות, פריטי מוזאיקה, עבודות עץ ושמן זית צור קשר:
+                </h4>
+                <p>טלפון: 09-8666244</p>
+                <p>עפרה נייד: 054-4666244</p>
+                <p>מייל: hativam&#64;orange.net.il</p>
+                <p>כתובת: רחוב הבאר 42, כפר ויתקין 40200</p>
+            </p-card>
+        </div>
+        <div class="flex-1 flex justify-content-center align-items-center">
+            <p-image
+                [src]="image.src"
+                [alt]="image.alt"
+                [preview]="true"
+                width="450"
+            >
+                <ng-template pTemplate="indicator">
+                    <i class="pi pi-check"></i>
+                </ng-template>
+            </p-image>
+        </div>
+    </div>
+</article>

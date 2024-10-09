@@ -11,9 +11,10 @@ import { GalleriaModule } from 'primeng/galleria';
 import { TablesComponent } from '../tables/tables.component';
 import { PlatesComponent } from '../plates/plates.component';
 import { OtherWorkComponent } from '../other-work/other-work.component';
-import { OilComponent } from '../oil/oil.component'
+import { OilComponent } from '../oil/oil.component';
+import { ContactComponent } from '../contact/contact.component'
 @NgModule({
-    declarations: [NavbarComponent, IntroComponent, YardComponent, TablesComponent, PlatesComponent, OtherWorkComponent, OilComponent],
+    declarations: [NavbarComponent, IntroComponent, YardComponent, TablesComponent, PlatesComponent, OtherWorkComponent, OilComponent, ContactComponent],
     imports: [
         CardModule,
         GalleriaModule,

@@ -7,6 +7,7 @@ import { TablesComponent } from './tables/tables.component'
 import { PlatesComponent } from './plates/plates.component'
 import { OtherWorkComponent } from './other-work/other-work.component'
 import { OilComponent } from './oil/oil.component'
+import { ContactComponent } from './contact/contact.component'
 
 const routes: Routes = [
     {
@@ -14,7 +15,7 @@ const routes: Routes = [
         component: IntroComponent,
     },
     {
-        path: RouterPaths.Intro.split('/')[1],
+        path: RouterPaths.Yard.split('/')[1],
         component: YardComponent,
     },
     {
@@ -32,6 +33,10 @@ const routes: Routes = [
     {
         path: RouterPaths.Oil.split('/')[1],
         component: OilComponent,
+    },
+    {
+        path: RouterPaths.Contact.split('/')[1],
+        component: ContactComponent,
     },
 ]
 
