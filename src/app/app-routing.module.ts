@@ -5,6 +5,7 @@ import { YardComponent } from './yard/yard.component'
 import { routerPaths } from './misc/strings'
 import { TablesComponent } from './tables/tables.component'
 import { PlatesComponent } from './plates/plates.component'
+import { OtherWorkComponent } from './other-work/other-work.component'
 
 const routes: Routes = [
     {
@@ -25,7 +26,7 @@ const routes: Routes = [
     },
     {
         path: routerPaths[4].split('/')[1],
-        component: TablesComponent,
+        component: OtherWorkComponent,
     },
 ]
 
