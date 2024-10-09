@@ -32,7 +32,11 @@
                 <ng-template #noLink>
                     <div class="p-menuitem-link">
                         <span class="mr-2">{{ item.label }}</span>
-                        <span class="pi pi-fw pi-angle-down mr-2"></span>
+
+                        <span
+                            *ngIf="item.items"
+                            class="pi pi-fw pi-angle-down mr-2"
+                        ></span>
                     </div>
                 </ng-template>
             </ng-template>

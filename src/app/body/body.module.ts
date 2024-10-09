@@ -10,9 +10,10 @@ import { YardComponent } from '../yard/yard.component' // Import CommonModule
 import { GalleriaModule } from 'primeng/galleria';
 import { TablesComponent } from '../tables/tables.component';
 import { PlatesComponent } from '../plates/plates.component';
-import { OtherWorkComponent } from '../other-work/other-work.component'
+import { OtherWorkComponent } from '../other-work/other-work.component';
+import { OilComponent } from '../oil/oil.component'
 @NgModule({
-    declarations: [NavbarComponent, IntroComponent, YardComponent, TablesComponent, PlatesComponent, OtherWorkComponent],
+    declarations: [NavbarComponent, IntroComponent, YardComponent, TablesComponent, PlatesComponent, OtherWorkComponent, OilComponent],
     imports: [
         CardModule,
         GalleriaModule,

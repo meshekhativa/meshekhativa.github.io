@@ -3,7 +3,7 @@ import { MenuItem } from 'primeng/api'
 
 import { NavigationEnd, Router } from '@angular/router'
 import { filter } from 'rxjs'
-import { routerPaths } from '../misc/strings'
+import { RouterPaths } from '../misc/strings'
 
 @Component({
     selector: 'app-navbar',
@@ -21,12 +21,12 @@ export class NavbarComponent {
             {
                 label: 'אודות המשק',
                 command: () => {
-                    this.router.navigate([routerPaths[0]])
+                    this.router.navigate([RouterPaths.Intro])
                 },
                 items: [
                     {
                         label: 'החצר ובית המלכה',
-                        route: routerPaths[1],
+                        route: RouterPaths.Yard,
                     },
                 ],
             },
@@ -35,34 +35,26 @@ export class NavbarComponent {
                 items: [
                     {
                         label: 'שולחנות',
-                        route: routerPaths[2],
+                        route: RouterPaths.Tables,
                     },
                     {
                         label: 'פלטות',
-                        route: routerPaths[3],
+                        route: RouterPaths.Plates,
                     },
                     {
                         label: 'עבודות אחרות',
-                        route: routerPaths[4],
+                        route: RouterPaths.OtherWork,
                     },
                 ],
             },
             {
                 label: 'שמן זית',
-                items: [
-                    {
-                        label: 'Angular',
-                        url: 'https://angular.io/',
-                    },
-                    {
-                        label: 'Vite.js',
-                        url: 'https://vitejs.dev/',
-                    },
-                ],
+                command: () => {
+                    this.router.navigate([RouterPaths.Oil])
+                },
             },
             {
                 label: 'צור קשר',
-                // icon: 'pi pi-home',
                 items: [
                     {
                         label: 'Angular',

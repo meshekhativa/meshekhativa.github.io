@@ -19,8 +19,8 @@ export class TablesComponent {
 
     ngOnInit() {
         this.images.forEach((image, index) => {
-            image.thumbnailImageSrc = `assets/mosaic/thumbnails/${index}.webp`
-            image.itemImageSrc = `assets/mosaic/tables/${index}.webp`
+            image.thumbnailImageSrc = `assets/mosaic/tables/thumbnails/${index}.webp`
+            image.itemImageSrc = `assets/mosaic/tables/images/${index}.webp`
         })
     }
 

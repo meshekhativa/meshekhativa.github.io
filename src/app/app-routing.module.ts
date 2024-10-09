@@ -2,10 +2,11 @@ import { NgModule } from '@angular/core'
 import { RouterModule, Routes } from '@angular/router'
 import { IntroComponent } from './intro/intro.component'
 import { YardComponent } from './yard/yard.component'
-import { routerPaths } from './misc/strings'
+import { RouterPaths } from './misc/strings'
 import { TablesComponent } from './tables/tables.component'
 import { PlatesComponent } from './plates/plates.component'
 import { OtherWorkComponent } from './other-work/other-work.component'
+import { OilComponent } from './oil/oil.component'
 
 const routes: Routes = [
     {
@@ -13,20 +14,24 @@ const routes: Routes = [
         component: IntroComponent,
     },
     {
-        path: routerPaths[1].split('/')[1],
+        path: RouterPaths.Intro.split('/')[1],
         component: YardComponent,
     },
     {
-        path: routerPaths[2].split('/')[1],
+        path: RouterPaths.Tables.split('/')[1],
         component: TablesComponent,
     },
     {
-        path: routerPaths[3].split('/')[1],
+        path: RouterPaths.Plates.split('/')[1],
         component: PlatesComponent,
     },
     {
-        path: routerPaths[4].split('/')[1],
+        path: RouterPaths.OtherWork.split('/')[1],
         component: OtherWorkComponent,
+    },
+    {
+        path: RouterPaths.Oil.split('/')[1],
+        component: OilComponent,
     },
 ]
 
