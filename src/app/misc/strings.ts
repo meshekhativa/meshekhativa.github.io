@@ -1,1 +1,1 @@
-export const routerPaths = ['/', '/yard']
+export const routerPaths = ['/', '/yard', '/tables', '/plates', '/other-work']

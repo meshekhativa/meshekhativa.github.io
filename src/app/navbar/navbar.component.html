@@ -1,10 +1,12 @@
 <div
     class="fixed top-0 w-screen flex justify-content-center align-content-center gap-5"
 >
-    <h1 class="m-0 p-0 flex justify-content-center align-items-center">
-        משק חטיבה
-    </h1>
-    <nav class="card my-2">
+    <p-card>
+        <h1 class="m-0 p-0 flex justify-content-center align-items-center">
+            משק חטיבה
+        </h1>
+    </p-card>
+    <nav class="my-2 flex align-items-center">
         <p-menubar [model]="items">
             <ng-template
                 pTemplate="item"
@@ -15,7 +17,6 @@
                         [routerLink]="item.route"
                         class="p-menuitem-link"
                     >
-                        <!-- <span [class]="item.icon"></span> -->
                         <span class="mr-2">{{ item.label }}</span>
                     </a>
                 </ng-container>
@@ -25,13 +26,11 @@
                         [href]="item.url"
                         class="p-menuitem-link"
                     >
-                        <!-- <span [class]="item.icon"></span> -->
                         <span class="mr-2">{{ item.label }}</span>
                     </a>
                 </ng-template>
                 <ng-template #noLink>
                     <div class="p-menuitem-link">
-                        <!-- <span [class]="item.icon"></span> -->
                         <span class="mr-2">{{ item.label }}</span>
                         <span class="pi pi-fw pi-angle-down mr-2"></span>
                     </div>

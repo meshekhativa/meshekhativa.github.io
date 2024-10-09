@@ -20,9 +20,8 @@ export class NavbarComponent {
         this.items = [
             {
                 label: 'אודות המשק',
-                // icon: 'pi pi-home',
                 command: () => {
-                    this.router.navigate(['/'])
+                    this.router.navigate([routerPaths[0]])
                 },
                 items: [
                     {
@@ -33,14 +32,23 @@ export class NavbarComponent {
             },
             {
                 label: 'מוזאיקה',
-                // icon: 'pi pi-link',
-                command: () => {
-                    this.router.navigate(['/installation'])
-                },
+                items: [
+                    {
+                        label: 'שולחנות',
+                        route: routerPaths[2],
+                    },
+                    {
+                        label: 'פלטות',
+                        route: routerPaths[3],
+                    },
+                    {
+                        label: 'עבודות אחרות',
+                        route: routerPaths[4],
+                    },
+                ],
             },
             {
                 label: 'שמן זית',
-                // icon: 'pi pi-home',
                 items: [
                     {
                         label: 'Angular',
