@@ -20,7 +20,10 @@ export class NavbarComponent {
         this.items = [
             {
                 label: 'אודות המשק',
-                icon: 'pi pi-palette',
+                // icon: 'pi pi-home',
+                command: () => {
+                    this.router.navigate(['/'])
+                },
                 items: [
                     {
                         label: 'החצר ובית המלכה',
@@ -30,14 +33,14 @@ export class NavbarComponent {
             },
             {
                 label: 'מוזאיקה',
-                icon: 'pi pi-link',
+                // icon: 'pi pi-link',
                 command: () => {
                     this.router.navigate(['/installation'])
                 },
             },
             {
                 label: 'שמן זית',
-                icon: 'pi pi-home',
+                // icon: 'pi pi-home',
                 items: [
                     {
                         label: 'Angular',
@@ -51,7 +54,7 @@ export class NavbarComponent {
             },
             {
                 label: 'צור קשר',
-                icon: 'pi pi-home',
+                // icon: 'pi pi-home',
                 items: [
                     {
                         label: 'Angular',

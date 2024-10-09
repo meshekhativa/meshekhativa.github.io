@@ -96,6 +96,14 @@ p-button {
     transform: translateX(-50%);
 }
 
+.ltr {
+    direction: ltr;
+}
+
+.rtl {
+    direction: rtl;
+}
+
 // Animations
 @keyframes fadeIn {
     from {

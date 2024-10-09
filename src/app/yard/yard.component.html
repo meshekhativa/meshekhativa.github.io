@@ -1,0 +1,38 @@
+<article class="flex justify-content-center mt-8 pt-4">
+    <div class="flex max-w-55rem gap-5">
+        <p-card>
+            <h1>החצר ו"הקליניקה"</h1>
+            <p>
+                בחצר המשק, לצד הלול ועצי הפרי הרבים שעמי ועפרה מטפחים מדי יום,
+                הוקמו בשנים האחרונות ה"קליניקה" ובית המלאכה בהם עפרה ועמי
+                מייצרים את עבודות המוזאיקה, הפרזול והעץ.
+            </p>
+            <p-divider></p-divider>
+            <div
+                class="card flex justify-content-center align-items-center ltr"
+            >
+                <p-galleria
+                    [value]="images"
+                    [autoPlay]="true"
+                    [showIndicators]="true"
+                    [showThumbnails]="false"
+                    [showItemNavigatorsOnHover]="true"
+                    [showItemNavigators]="true"
+                    [responsiveOptions]="responsiveOptions"
+                    [containerStyle]="{ 'max-width': '640px' }"
+                >
+                    <ng-template
+                        pTemplate="item"
+                        let-item
+                    >
+                        <p-image
+                            [src]="item.itemImageSrc"
+                            width="550"
+                            height="400"
+                        />
+                    </ng-template>
+                </p-galleria>
+            </div>
+        </p-card>
+    </div>
+</article>
