@@ -12,14 +12,15 @@
             <div class="card">
                 <div
                     *ngIf="images"
-                    class="grid"
+                    class="grid px-6"
                 >
                     <div
                         *ngFor="let image of images; let index = index"
-                        class="col-3"
+                        class="col-2"
                         key="index"
                     >
                         <img
+                            class="fixed-size"
                             [src]="image.thumbnailImageSrc"
                             style="cursor: pointer"
                             (click)="imageClick(index)"

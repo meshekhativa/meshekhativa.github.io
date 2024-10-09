@@ -11,7 +11,7 @@ export class TablesComponent {
 
     activeIndex: number = 0
 
-    images: GalleryImage[] = new Array(50)
+    images: GalleryImage[] = new Array(51)
         .fill(null)
         .map(() => ({ itemImageSrc: '', thumbnailImageSrc: '' }))
 
@@ -19,7 +19,7 @@ export class TablesComponent {
 
     ngOnInit() {
         this.images.forEach((image, index) => {
-            image.thumbnailImageSrc = `assets/mosaic/tables/${index}.webp`
+            image.thumbnailImageSrc = `assets/mosaic/thumbnails/${index}.webp`
             image.itemImageSrc = `assets/mosaic/tables/${index}.webp`
         })
     }
