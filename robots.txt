@@ -1,0 +1,3 @@
+User-agent: *
+Disallow:
+Sitemap: https://www.meshek-hativa.com/sitemap.xml
