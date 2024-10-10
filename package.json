@@ -6,6 +6,7 @@
         "start": "ng serve",
         "build": "ng build && purgecss -c postcss.config.js && node purge-js.js",
         "watch": "ng build --watch --configuration development",
+        "prod": "ng build && ng deploy --no-silent --repo=https://github.com/meshekhativa/meshekhativa.github.io --branch=prod",
         "test": "ng test"
     },
     "private": true,
@@ -32,6 +33,7 @@
         "@angular/compiler-cli": "^17.0.0",
         "@fullhuman/postcss-purgecss": "^6.0.0",
         "@types/jasmine": "~5.1.0",
+        "angular-cli-ghpages": "^2.0.1",
         "jasmine-core": "~5.1.0",
         "karma": "~6.4.0",
         "karma-chrome-launcher": "~3.2.0",
