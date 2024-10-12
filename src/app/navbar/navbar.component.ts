@@ -25,7 +25,7 @@ export class NavbarComponent {
                 },
                 items: [
                     {
-                        label: 'החצר ובית המלכה',
+                        label: 'החצר ובית המלאכה',
                         route: RouterPaths.Yard,
                     },
                 ],
