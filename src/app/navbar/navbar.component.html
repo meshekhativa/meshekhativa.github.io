@@ -1,13 +1,18 @@
 <div
-    class="fixed top-0 left-0 w-screen flex flex-row-reverse justify-content-center align-content-center gap-4 xl:gap-8 lg:flex-row"
+    class="fixed top-0 left-0 w-screen flex flex-row justify-content-center align-content-center p-5 gap-4 xl:gap-8 lg:flex-row"
 >
-    <p-card>
-        <h1 class="m-0 p-0 flex justify-content-center align-items-center">
+    <p-card class="">
+        <h1
+            class="flex-1 m-0 p-0 w-fit text-xs sm:text-sm md:text-lg lg:text-xl"
+        >
             משק חטיבה
         </h1>
     </p-card>
-    <nav class="my-2 lg:mr-8 flex align-items-center">
-        <p-menubar [model]="items">
+    <nav class="my-2 flex-1 lg:flex-none flex align-items-center lg:mr-8">
+        <p-menubar
+            class="flex-1"
+            [model]="items"
+        >
             <ng-template
                 pTemplate="item"
                 let-item

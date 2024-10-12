@@ -1,9 +1,8 @@
 <article class="flex justify-content-center mt-8 pt-4">
-    <div class="flex max-w-55rem gap-5">
-        <div class="flex-1">
+    <div class="flex flex-column max-w-55rem gap-5 lg:flex-row">
+        <div class="flex-1 mx-5">
             <p-card>
                 <h1>אודות המשק</h1>
-
                 <p>
                     משק חטיבה הוקם בשנת 1935 בכפר ויתקין על ידי אריה ועליזה
                     חטיבה.
@@ -21,7 +20,9 @@
                     ומבצעת את עבודות המוזאיקה.
                 </p>
                 <p-divider />
-                <div class="flex justify-content-center gap-5">
+                <div
+                    class="flex flex-column justify-content-center align-items-center gap-5 sm:flex-row"
+                >
                     <img
                         class="w-10rem h-10rem border-circle"
                         [src]="ofra.src"
