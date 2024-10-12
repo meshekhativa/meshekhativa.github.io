@@ -1,6 +1,6 @@
 <article class="flex justify-content-center mt-8 pt-4">
-    <div class="flex flex-column max-w-55rem gap-5 lg:flex-row">
-        <div class="flex-1 mx-5">
+    <div class="flex flex-column max-w-55rem gap-5 lg:flex-row px-5">
+        <div class="flex-1">
             <p-card>
                 <h1>אודות המשק</h1>
                 <p>
@@ -40,8 +40,8 @@
             <p-image
                 [src]="main.src"
                 [alt]="main.alt"
+                [imageStyle]="{ width: '100%', 'max-width': '450px' }"
                 [preview]="true"
-                width="450"
             >
                 <ng-template pTemplate="indicator">
                     <i class="pi pi-check"></i>
