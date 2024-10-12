@@ -1,5 +1,5 @@
 <article class="flex justify-content-center mt-8 pt-4">
-    <div class="flex max-w-55rem gap-5">
+    <div class="flex max-w-55rem gap-5 px-5">
         <p-card>
             <h1>שמן זית</h1>
             <p>
@@ -15,10 +15,10 @@
                 <p-galleria
                     [value]="images"
                     [autoPlay]="true"
-                    [showIndicators]="true"
+                    [showIndicators]="false"
                     [showThumbnails]="false"
-                    [showItemNavigatorsOnHover]="false"
-                    [showItemNavigators]="false"
+                    [showItemNavigatorsOnHover]="true"
+                    [showItemNavigators]="true"
                     [responsiveOptions]="responsiveOptions"
                     [containerStyle]="{ 'max-width': '640px' }"
                 >
@@ -26,11 +26,13 @@
                         pTemplate="item"
                         let-item
                     >
-                        <p-image
+                        <img
                             [src]="item.itemImageSrc"
-                            [preview]="true"
-                            width="550"
-                            height="400"
+                            style="
+                                width: 100%;
+                                min-height: 100px;
+                                display: block;
+                            "
                         />
                     </ng-template>
                 </p-galleria>
