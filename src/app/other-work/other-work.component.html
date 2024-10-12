@@ -1,5 +1,5 @@
 <article class="flex justify-content-center mt-8 pt-4">
-    <div class="flex max-w-55rem gap-5">
+    <div class="flex max-w-55rem gap-5 p-5">
         <p-card>
             <h1>עבודות אחרות</h1>
             <p>
@@ -12,11 +12,11 @@
             <div class="card">
                 <div
                     *ngIf="images"
-                    class="grid px-6"
+                    class="grid"
                 >
                     <div
                         *ngFor="let image of images; let index = index"
-                        class="col-2"
+                        class="col"
                         key="index"
                     >
                         <img

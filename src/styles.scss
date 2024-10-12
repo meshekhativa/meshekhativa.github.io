@@ -114,9 +114,16 @@ body {
 }
 
 .fixed-size {
-    width: 100px; /* Set your desired width */
-    height: 100px; /* Set your desired height */
+    width: 80px;
+    height: 80px;
     object-fit: cover; /* Optional: to maintain aspect ratio */
+}
+
+@media screen and (min-width: 350px) {
+    .fixed-size {
+        width: 100px;
+        height: 100px;
+    }
 }
 
 // .hero {
