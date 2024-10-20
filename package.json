@@ -6,7 +6,7 @@
         "start": "ng serve",
         "build": "ng build && purgecss -c postcss.config.js && node purge-js.js",
         "watch": "ng build --watch --configuration development",
-        "prod": "ng build && purgecss -c postcss.config.js && node purge-js.js && ng deploy --no-silent --repo=https://github.com/meshekhativa/meshekhativa.github.io --branch=prod",
+        "prod": "ng build && purgecss -c postcss.config.js && node purge-js.js && ng deploy --no-silent --repo=https://github.com/meshekhativa/meshekhativa.github.io --branch=prod  --cname=meshek-hativa.com",
         "test": "ng test"
     },
     "private": true,
