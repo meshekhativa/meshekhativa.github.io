@@ -18,7 +18,7 @@ export class IntroComponent {
     }
 
     readonly ami: Image = {
-        src: 'assets/intro/ami.webp',
+        src: 'assets/intro/ami.jpg',
         alt: 'תמונה של עמי',
     }
 }
